@@ -7,7 +7,7 @@ body{
 
 
 .landing{
-    background-image: url(./images/piz2.jpeg);
+
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,8 @@ body{
 .gold{
     background-color: lightblue;
     text-align: inherit;
+    background-image: url(./images/piz2.jpeg);
+    text-emphasis-color: blue;
 }
 
 .jumbo{
@@ -31,10 +33,6 @@ padding-block: 100px;
 .final{
     text-decoration-color: lime;
 }
-.fixed-header{
-    width: 100%;
-        position: fixed;        
-        background: #333;
-        padding: 10px 0;
-        color: #ff
+.row{
+    margin-top: 0px;
 }
