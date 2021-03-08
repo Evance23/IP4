@@ -17,20 +17,23 @@
     </div>
     <div class="gold">
         <p><strong>If you are here then your are in the right Palace</strong></p>
-        <p>You are just in time for the tastiest and sweetest Pizza in this town</p>
-        <p>We want to change your mind and taste buds...for the SWEETER. Our tasty Pizza is specifically made to suit  the demands of your tastebuds</p>
+            <p>You are just in time for the tastiest and sweetest Pizza in this town</p>
+            <p>We want to change your mind and taste buds...for the SWEETER. Our tasty Pizza is specifically made to suit  the demands of your tastebuds</p>
         <p> Working with you, we give you the chance to personally select the options that you want on your Pizza. We give you a personalized experience that fulfils your innermost pizza desires</p>
-        <p>Just because, you are the reason we are here.</p>
-    </div> 
-    </nav>
+    <p>Just because, you are the reason we are here.</p>
+</div> 
+</nav>
     <div class="row">
         <div class="column">
-          <img src="./images/piz4.jpeg" alt="Pizza" onclick="myFunction(this);">
+          <img src="./images/piz9.jpeg" alt="Pizza" onclick="myFunction(this);">
         </div>
         <div class="column">
-          <img src="./images/piz7.jpeg" alt="Pizza" onclick="myFunction(this);">
-        </div>
-      </div>  
+            <img src="./images/p9.jpeg" alt="Pizza" onclick="myFunction(this);">
+          </div>
+        <div class="column">
+        <img src="./images/piz8.jpeg" alt="Pizza" onclick="myFunction(this);">
+    </div>
+</div>  
 
         <div class="container">
             <h1>Proceed to Order</h1>
@@ -57,7 +60,87 @@
                     </select>
                   </div>
         </div>
+            <div class="final"> 
+                <p>Get Any Topping For an Additionl 1$</p>
+                <h2>Add Topping</h2>
+                <form>
+                    <input type="radio" id="achovile" name="topping" value="achovile">
+                    <label for="achovile">Achovile</label><br>
+                    <input type="radio" id="gorgonzola" name="topping" value="gorgonzola">
+                    <label for="gorgonzola">Gorgonzola</label><br>
+                    <input type="radio" id="other" name="topping" value="potato">
+                    <label for="potato">Potato</label>
+                  </form>
+            </div>
     </div>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Estate</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>
+                <ol>
+                    <ol>Nairobi</ul>
+                    <ul>Parklands</ul>
+                    <ul>Kileleshwa</ul>
+                    <ul>Uthiru</ul>
+                    <ul>Roysambu</ul>
+                    <ul>Zimmerman</ul>
+                </ul>
+            </option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+       
+    
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Checkout</button>
+        </div>
+      </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./script.js"></script>
 </body>
