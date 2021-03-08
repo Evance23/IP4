@@ -1,13 +1,4 @@
 
-html{
-    width:100%;
-    min-width:1000px;
-    height:auto;
-}
-}
-
-
-
 body{
     margin: 0;
     padding: 0;
@@ -24,6 +15,15 @@ body{
     font-style: italic;
 }
 .gold{
-    background-color: khaki;
+    background-color: lightblue;
     text-align: inherit;
+}
+
+.jumbo{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration-color: lightgreen;
+}
+.container{
+    background-color: lightpink;
 }
