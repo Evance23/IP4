@@ -17,84 +17,85 @@
 
 <body>
   <div class="landing text-white">
-    <h1 >Pizza Nostra</h1>
+    <h1>Pizza Nostra</h1>
     <h2><i>Your Dose of Tasty</i></h2>
     <br>
   </div>
-<div class="content text-white">
-  <div class="container">
-    <h1>Proceed to Order</h1>
-    <div class="form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected>Today's Flavors</option>
-        <option value="1">Margherita Pizza</option>
-        <option value="2">Hawaiian Pizza</option>
-        <option value="3">Pepperoni Pizza</option>
-      </select>
+  <div class="content text-white">
+    <div class="container">
+      <h1>Proceed to Order</h1>
       <div class="form-floating">
         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-          <option selected>Pick Your Size</option>
-          <option value="1">Large $12</option>
-          <option value="2">Medium $7.5</option>
-          <option value="3">Small $5</option>
+          <option selected>Today's Flavors</option>
+          <option value="1">Margherita Pizza</option>
+          <option value="2">Hawaiian Pizza</option>
+          <option value="3">Pepperoni Pizza</option>
         </select>
         <div class="form-floating">
-          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-            <option selected>Crusts</option>
-            <option value="1">Cheese Stuffed</option>
-            <option value="2">Flatbread</option>
-            <option value="3">Neapolitan</option><br>
+          <select class="form-select" id="price" aria-label="Floating label select example">
+            <option selected>Pick Your Size</option>
+            <option value="12">Large $12</option>
+            <option value="7.5">Medium $7.5</option>
+            <option value="5">Small $5</option>
           </select>
+          <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Crusts</option>
+              <option value="1">Cheese Stuffed</option>
+              <option value="2">Flatbread</option>
+              <option value="3">Neapolitan</option><br>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="final">
-        <p>Get Any Topping For an Additionl 1$</p>
-        <h2 class="topping" id="colors">Add Topping</h2>
-        <form>
-          <input type="radio" id="achovile" name="topping" value="achovile">
-          <label for="achovile">Achovile</label><br>
-          <input type="radio" id="gorgonzola" name="topping" value="gorgonzola">
-          <label for="gorgonzola">Gorgonzola</label><br>
-          <input type="radio" id="other" name="topping" value="potato">
-          <label for="potato">Potato</label>
-        </form>
-      </div>
-      <br>
-<section class="parent">
-      <div class="container">
-        <form action="Refresh">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <div class="final">
+          <p>Get Any Topping For an Additionl 1$</p>
+          <h2 class="topping" id="colors">Add Topping</h2>
+          <form>
+            <input type="radio" id="achovile" name="topping" value="achovile">
+            <label for="achovile">Achovile</label><br>
+            <input type="radio" id="gorgonzola" name="topping" value="gorgonzola">
+            <label for="gorgonzola">Gorgonzola</label><br>
+            <input type="radio" id="other" name="topping" value="potato">
+            <label for="potato">Potato</label>
+          </form>
+        </div>
+        <br>
+        <section class="parent">
+          <div class="container">
+            <form id="dent">
 
-          <label for="lname">Quantity of Order</label>
-          <input type="text" id="number" name="number" placeholder="number">
-      
-          <label for="prefence">Preference</label>
-          <select id="prefence" name="prefence">
-            <option value="takeaway">Takeaway</option>
-            <option value="homedelivery">Home Delivery</option>
-            <option value="sitneat">Sit n' Eat</option>
-          </select>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-      <div>
-      </section>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="lname">Quantity of Order</label><br>
+              <input type="number" id="quantity" name="quantity" value='1' placeholder="quantity">
+<br>
+              <label for="prefence">Preference</label>
+              <select id="prefence" name="prefence">
+                <option value="takeaway">Takeaway</option>
+                <option value="homedelivery">Home Delivery</option>
+                <option value="sitneat">Sit n' Eat</option>
+              </select>
+
+
+              <input type="submit" onclick="totalPrice()" value="Submit">
+
+            </form>
+          </div>
+          <div>
+        </section>
         <p>Home Delivery ?</p>
         <button type="button" onclick="alert('Delivery in 30 mins @ an additional $1!')">Confirm!</button>
       </div>
 
-   
- 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+      <script src="./script.js"></script>
 </body>
 
 </html>
