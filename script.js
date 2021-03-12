@@ -9,17 +9,17 @@ function Getpizza(name, size, crust, topping, total) {
   this.total = total;
 }
 
-function totalPrice(){
-    var price = document.getElementById('price').value;
-    var quantity = document.getElementById('quantity').value;
+function totalPrice() {
+  var price = document.getElementById('price').value;
+  var quantity = document.getElementById('quantity').value;
 
-    var total = price * quantity;
+  var total = price * quantity;
 
-    alert(total);
-  }
+  alert(total);
+}
 
 $(document).ready(function () {
-  
+
   $("#dent").submit(function (event) {
     event.preventDefault();
 
@@ -151,7 +151,7 @@ $(document).ready(function () {
         $("#ordersmade").append('<tr><td id="pizzaname">' + newOrder.name + '</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">' + newOrder.crust + '</td><td id="pizzatopping">' + newOrder.topping + '</td><td id="totals">' + newOrder.total + '</td></tr>');
         console.log(newOrder);
 
-  
+
       });
       alert("Your Bill is $. " + checkoutTotal);
     });
