@@ -140,4 +140,21 @@ $(document).ready(function(){
             console.log("Your total bills is sh. "+checkoutTotal);
             $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
           });
-      
+
+          var ans = prompt("Where do you want you order delivered?");
+          alert(`The delivery charge is ${deliveryCharge}. Your grand total is ${totalPrice} dollars. Thank you for shopping with us, your items will be delivered to ${ans}`)
+          
+      });
+
+      if (confirm('Home Delivery')) {
+        // Save it!
+        prompt("enter your location");
+        prompt("enter your phone number");
+        alert("Your pizza will be delivered");
+        alert("Order summary: " + number() + ", " + flavorName + ",  " + sizeName + ", " + topping_value + ", " + crust_price + " and Ksh $1 Delivery fee");
+        alert("Your charges for Pizza" + (checkoutTotal + $1));
+      } else {
+        // Do nothing!
+        alert("Order summary: " + number() + ", " + flavorName + ",  " + sizeName + ", " + topping_value + ", " + crust_price);
+        alert("Your charges for Pizza" + checkoutTotal);
+    };

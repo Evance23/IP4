@@ -1,25 +1,23 @@
 
 body{
-    margin: 0;
-    padding: 0;
+   background-image: url(./images/pizbg.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   
 }
-
+.content{
+    text
+}
 
 
 .landing{
 
     text-align: center;
     background-repeat: no-repeat;
-    background-color: wheat;
+    background-color::backdrop
     background-size: cover;
     height: fit-content;
-    font-style: italic;
-}
-.gold{
-    background-color: lightblue;
-    text-align: inherit;
-    background-image: url(./images/piz2.jpeg);
-    text-emphasis-color: blue;
+    font-styles
 }
 
 .jumbo{
@@ -28,7 +26,6 @@ body{
     text-decoration-color: lightgreen;
 }
 .container{
-    background-color: lightpink;
 padding-block: 100px;
 }
 .final{
@@ -37,15 +34,20 @@ padding-block: 100px;
 .row{
     margin-top: 0px;
 }
+.form.floating{
+    width: 100%;
+  padding: 6px 20px;
+  margin: 5px 0;
+}
 .button{
-    background-color: whitesmoke;
+ background-color: red;
   border: none;
   color: purple;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 10px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -55,3 +57,34 @@ padding-block: 100px;
 .jumbo{
     background-image: url("bg.jpeg");
 }
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .parent{
+      display:flex
+  }
