@@ -49,7 +49,7 @@
       </div>
       <div class="final">
         <p>Get Any Topping For an Additionl 1$</p>
-        <h2>Add Topping</h2>
+        <h2 class="topping" id="colors">Add Topping</h2>
         <form>
           <input type="radio" id="achovile" name="topping" value="achovile">
           <label for="achovile">Achovile</label><br>
@@ -62,16 +62,19 @@
       <br>
 <section class="parent">
       <div class="container">
-        <form action="action_page.php">
+        <form action="Refresh">
       
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
       
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="lname">Quantity of Order</label>
+          <input type="text" id="number" name="number" placeholder="number">
       
-          <label for="perefence">Preference</label>
-          <select id="perefence" name="perefence">
+          <label for="prefence">Preference</label>
+          <select id="prefence" name="prefence">
             <option value="takeaway">Takeaway</option>
             <option value="homedelivery">Home Delivery</option>
             <option value="sitneat">Sit n' Eat</option>
